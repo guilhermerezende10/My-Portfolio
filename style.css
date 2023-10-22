@@ -8,11 +8,6 @@
     box-sizing: border-box;
 }
 
-img{
-    width: 100%;
-    display: flex;
-}
-
 a{
     text-decoration: none;
 }
@@ -30,10 +25,6 @@ nav{
     align-items: center;
     justify-content: center;
     gap: 2rem;
-}
-
-.nav-logo{
-    max-width: 100px;
 }
 
 .nav-links{
@@ -57,11 +48,11 @@ nav{
     bottom: 0;
     left: 0;
     background-color: #1d4ed8;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .link a:hover::after{
-    width: 70%;
+    width: 100%;
 }
 
 .btn{
@@ -71,7 +62,7 @@ nav{
     background-color: #1d4ed8;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .btn:hover{
@@ -90,6 +81,15 @@ nav{
     z-index: -100;
 }
 
+img {
+    width: 70%;
+    display: flex;
+    border-radius: 30%;
+    box-shadow: 8px 4px 10px 5px #1d4fd81e;
+    max-width: 450px;
+    margin: auto;
+}
+
 header{
     position: relative;
     padding-top: 2rem;
@@ -104,9 +104,9 @@ header{
 header .content h1{
     color: #fff;
     margin-bottom: 1rem;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: 700;
-    line-height: 4rem;
+    
 }
 
 header .content h1 span{
@@ -114,32 +114,8 @@ header .content h1 span{
     -webkit-text-stroke: 1px #fff;
 }
 
-header .content p{
-    margin-bottom: 2rem;
-    color: #ccc;
-}
-
 header .image{
     position: relative;
-}
-
-header .image::before{
-    content: "o";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 38rem;
-    font-weight: 400;
-    line-height: 20rem;
-    color: #1d4ed8;
-    opacity: 0.2;
-    z-index: -100;
-}
-
-header .image img{
-    max-width: 600px;
-    margin: auto;
 }
 
 section .header{
